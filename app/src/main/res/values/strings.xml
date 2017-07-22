@@ -1,0 +1,29 @@
+<resources>
+    <string name="add_item">Add Item</string>
+    <string name="add_product">Add Product</string>
+    <string name="app_name">Product Inventory</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="confirm_delete">Are you sure you want to delete your inventory?</string>
+    <string name="contact_info">Contact Info: </string>
+    <string name="contact_info_email">Email</string>
+    <string name="delete">Delete</string>
+    <string name="delete_label">Delete All Products</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+    <string name="empty">No available items</string>
+    <string name="hint_product_name">Insert name</string>
+    <string name="hint_product_price">Insert price</string>
+    <string name="item_sold">Sold: </string>
+    <string name="less">Less</string>
+    <string name="modify">Modify number of available</string>
+    <string name="more">More</string>
+    <string name="order">Order</string>
+    <string name="product">Product</string>
+    <string name="product_available">Available: </string>
+    <string name="product_image">Product Image</string>
+    <string name="product_name">Name: </string>
+    <string name="product_number">Number of products</string>
+    <string name="product_price">Price: </string>
+    <string name="sell_button">Sell</string>
+</resources>

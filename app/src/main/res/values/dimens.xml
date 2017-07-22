@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="height_button">100dp</dimen>
+    <dimen name="height_item">160dp</dimen>
+    <dimen name="height_main">48dp</dimen>
+    <dimen name="list_text_view">0dp</dimen>
+    <dimen name="margin_vertical">16dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="thumb_width">100dp</dimen>
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="width_button">100dp</dimen>
+    <dimen name="list_item_height">160dp</dimen>
+</resources>

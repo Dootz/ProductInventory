@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="@dimen/padding"
+    android:orientation="vertical"
+    tools:context="com.example.android.product_inventory.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+        android:orientation="horizontal"
+        <TextView
+            style="@style/inventory_status_view"
+            android:visibility="visible"
+            android:text="@string/empty"
+            android:id="@+id/no_product" />
+        <Button
+            style="@style/add_button"
+            android:text="@string/add_item"
+            android:id="@+id/button_add_item" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="5dp"
+        android:orientation="vertical"
+        android:divider="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        android:drawSelectorOnTop="true"
+        android:visibility="visible"
+        android:id="@+id/list_products" />
+</LinearLayout>

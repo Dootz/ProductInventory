@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.example.android.product_inventory.ListItem">
+
+    <LinearLayout
+        android:id="@+id/product_info"
+        style="@style/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/list_text_label"
+                android:layout_width="@dimen/list_text_view"
+                android:text="@string/product_name" />
+            <TextView
+                android:id="@+id/product_name"
+                style="@style/list_text_view"
+                android:layout_width="@dimen/list_text_view" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/list_text_label"
+                android:layout_width="@dimen/list_text_view"
+                android:text="@string/product_available" />
+            <TextView
+                android:id="@+id/products_available"
+                style="@style/list_text_view"
+                android:layout_width="@dimen/list_text_view" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/list_text_label"
+                android:layout_width="@dimen/list_text_view"
+                android:text="@string/product_price" />
+            <TextView
+                android:id="@+id/list_product_price"
+                style="@style/list_text_view"
+                android:layout_width="@dimen/list_text_view" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/list_text_label"
+                android:layout_width="@dimen/list_text_view"
+                android:text="@string/item_sold" />
+            <TextView
+                android:id="@+id/product_sold"
+                style="@style/list_text_view"
+                android:layout_width="@dimen/list_text_view" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thumb_and_btn"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_item"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/button_sell"
+            android:layout_width="@dimen/thumb_width"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/sell_button" />
+    </LinearLayout>
+</RelativeLayout>
