@@ -1,3 +1,13 @@
+/*
+ While i was creating this project i mostly looked at those projects:
+ https://github.com/laramartin/android_inventory
+ https://github.com/sudhirkhanger/InventoryApp
+ https://github.com/hendercine/ProductInventory
+
+ Since it's my last project in Udacity scholarship i want to thank you
+ for this opportunity.
+ */
+
 package com.example.android.product_inventory;
 
 import android.content.DialogInterface;
