@@ -79,12 +79,11 @@ public class MainActivity extends AppCompatActivity {
 
         Button addItemButton = (Button) findViewById(R.id.button_add_item);
         productList = (ListView) findViewById(R.id.list_products);
+        textView = (TextView) findViewById(R.id.no_product);
         adapter = new ProductAdapter(MainActivity.this, productInventory);
         productList.setAdapter(adapter);
-
+        productList.setEmptyView(textView);
         if (db.getProductsCount() == 0) {
-            textView = (TextView) findViewById(R.id.no_product);
-            textView.setVisibility(View.VISIBLE);
         } else {
             productList.setVisibility(View.VISIBLE);
             productInventory.addAll(db.getAllProducts());

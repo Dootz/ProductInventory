@@ -100,12 +100,16 @@ public class ProductInfo extends AppCompatActivity {
                 if (!validator.isInteger(editAvailableText)) {
                     editStatusMessage.setVisibility(View.VISIBLE);
                 } else {
-                    setVisToHide(modifyAvailable, editConfirm, changeAvailableView, editStatusMessage);
-                    int available = Integer.parseInt(editAvailableText.getText().toString());
-                    product.setAvailable(available);
-                    productAvailableView.setText(Integer.toString(available));
-                    db.updateProduct(product);
-                    editAvailableText.setText("");
+                    if(validator.isPositive(Integer.parseInt(editAvailableText.getText().toString()))) {
+                        setVisToHide(modifyAvailable, editConfirm, changeAvailableView, editStatusMessage);
+                        int available = Integer.parseInt(editAvailableText.getText().toString());
+                        product.setAvailable(available);
+                        productAvailableView.setText(Integer.toString(available));
+                        db.updateProduct(product);
+                        editAvailableText.setText("");
+                    }else{
+                        editStatusMessage.setVisibility(View.VISIBLE);
+                    }
                 }
             }
         });

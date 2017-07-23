@@ -17,7 +17,7 @@
         android:orientation="horizontal"
         <TextView
             style="@style/inventory_status_view"
-            android:visibility="visible"
+            android:visibility="gone"
             android:text="@string/empty"
             android:id="@+id/no_product" />
         <Button
